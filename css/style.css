@@ -1,0 +1,15 @@
+:root {
+    --rojo: #e50914;
+    --blanco: #EEE;
+    --gris: #303030;
+    --gris-f: #757575;
+    --tipo-titular: "tipo de letra";
+    --tipo-principal: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
