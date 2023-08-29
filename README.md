@@ -1,2 +1,2 @@
 # portfolio
-Mi portfolio hecho con Vue 3
+Mi portfolio hecho con HTML5 y CSS3
