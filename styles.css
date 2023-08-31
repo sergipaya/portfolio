@@ -1,0 +1,21 @@
+/* styles.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: linear-gradient(to right, #f0f0f0 1px, transparent 1px) 0 0 / 30px 100% repeat-y;
+    padding: 20px;
+  }
+
+  .grid-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .text-section {
+    flex-basis: 100%;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+  }

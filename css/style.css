@@ -13,3 +13,156 @@
   border: 0;
   box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul>li{
+    list-style-type: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    min-height: 5em;
+}
+header h1{
+}
+header h1 .a{}
+header .nav{
+}
+header .ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+header .li{
+}
+header .li .a{}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.seccion{
+/*     width: 100%;
+    height: 40vh;
+    background: lightseagreen;
+    border: solid 1px var(--gris);
+    display: flex;
+    flex-flow: column wrap; */
+}
+section{
+}
+.fila{
+    display: flex;
+    flex-flow: row wrap;
+}
+.fila-item{
+    flex: 1 0 33.333333%;
+    display: flex;
+    flex-flow: column wrap;
+    border-top: 1px solid rgb(26, 26, 26);
+    border-right: 1px solid rgb(28, 28, 28);
+}
+.header{
+    border-top: none;
+}
+.footer{
+    border-bottom: none;
+}
+.fila-item:first-child,
+.fila-item:last-child {
+    background-color: aqua;
+    border-style: none;
+    max-width: 20px; /* O el ancho que desees para los primeros y últimos elementos */
+}
+.fila-item:first-child{
+    border-right: 1px solid black;
+}
+.inicio{
+    min-height: 60vh;
+}
+.espacio-inicio{
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+}
+.titulo{
+    min-height: 5em;
+    padding: 1em 2em;
+}
+.grid-vacio{
+
+}
+.seccion .circulo{}
+.seccion .h2{
+/*     padding: 0 2em;
+ */}
+.seccion .h3{
+/*     padding: 0 2em;
+ */}
+.seccion .p{
+/*     padding: 0 2em;
+ */}
+.seccion .grid{
+/*     width: 100%;
+    display: flex;
+    flex-flow: row wrap; */
+}
+.vacio{
+/*     height: 75%;
+ */}
+.titulo{
+/*     height: 25%;
+ */}
+.seccion .grid .article{
+/*     border: 1px solid var(--gris);
+    flex: 0 0 100%;
+    padding: 1px; */
+}
+
+.text-section{
+    position: absolute;
+}
+.seccion .grid .a{}
+.seccion .grid .img{}
+.seccion .grid .h4{}
+
+.about{
+}
+.about .h2{}
+.about .p{}
+.about .rrss{}
+.about .li{}
+.about .a{}
+.rrss img{
+    width: 10%;
+    height: auto;
+}
+.about .circulo{}
+
+footer{
+}
+footer span{}
+
+@media screen and (min-width: 576px){
+    .fila-item{
+        flex: 1 0 25%;
+    }
+}
+@media screen and (min-width: 768px){
+    .fila-item{
+        flex: 1 0 20%;
+    }
+}
+@media screen and (min-width: 992px){
+    .fila-item{
+        flex: 1 0 16.666667%;
+    }
+}
