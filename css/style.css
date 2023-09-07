@@ -3,8 +3,8 @@
     --blanco: #EEE;
     --gris: #303030;
     --gris-f: #757575;
-    --tipo-titular: "tipo de letra";
-    --tipo-principal: "";
+    --tipo-titular: 'Oswald', sans-serif;
+    --tipo-principal: 'Source Sans 3', sans-serif;
 }
 
 * {
@@ -12,6 +12,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: var(--tipo-principal);
 }
 a {
     text-decoration: none;
@@ -60,56 +61,63 @@ main{
 }
 section{
 }
-.fila{
+.fila, .fila-trabajos{
     display: flex;
     flex-flow: row wrap;
 }
-.fila-item{
+.fila-item, .trabajo-item{
     flex: 1 0 33.333333%;
     display: flex;
     flex-flow: column wrap;
-    border-top: 1px solid rgb(26, 26, 26);
     border-right: 1px solid rgb(28, 28, 28);
 }
-.header{
-    border-top: none;
+.header-item{
+    padding: 1em;
+    border-bottom: 1px solid black;
 }
-.footer{
-    border-bottom: none;
+.header-item.first-item{
+    border-right: none;
+}
+.header nav {
+    padding: 1em;
+}
+.footer-item{
+    border-top: 1px solid black;
 }
 .fila-item:first-child,
-.fila-item:last-child {
-    background-color: aqua;
+.fila-item:last-child,
+.trabajo-item:first-child,
+.trabajo-item:last-child {
     border-style: none;
-    max-width: 20px; /* O el ancho que desees para los primeros y últimos elementos */
+    max-width: 20px;
 }
-.fila-item:first-child{
+.fila-item:first-child,
+.trabajo-item:first-child{
     border-right: 1px solid black;
 }
 .inicio{
     min-height: 60vh;
 }
-.espacio-inicio{
-    flex-grow: 1;
-    border-bottom: 1px solid black;
-}
 .titulo{
-    min-height: 5em;
-    padding: 1em 2em;
-}
+    min-height: 6em;}
 .grid-vacio{
 
 }
 .seccion .circulo{}
-.seccion .h2{
-/*     padding: 0 2em;
- */}
-.seccion .h3{
-/*     padding: 0 2em;
- */}
-.seccion .p{
-/*     padding: 0 2em;
- */}
+h1{
+    font-family: var(--tipo-titular);
+    font-size: 4em;
+}
+.h2{
+    font-family: var(--tipo-titular);
+    font-size: 3em;
+}
+.h3{
+    font-weight: 500;
+}
+p{
+    font-size: 1em;
+}
 .seccion .grid{
 /*     width: 100%;
     display: flex;
@@ -129,6 +137,14 @@ section{
 
 .text-section{
     position: absolute;
+    padding: 1em;
+}
+.trabajos .titulo{
+    min-height: 7em;
+}
+.trabajos article{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 .seccion .grid .a{}
 .seccion .grid .img{}
@@ -152,17 +168,37 @@ footer{
 footer span{}
 
 @media screen and (min-width: 576px){
-    .fila-item{
+    .fila-item, .trabajo-item{
         flex: 1 0 25%;
+    }
+    .header-item{
+        border-right: 1px solid black;
+    }
+    .header-item.first-item{
+        border-right: 1px solid black;
     }
 }
 @media screen and (min-width: 768px){
-    .fila-item{
+    .fila-item, .trabajo-item{
         flex: 1 0 20%;
     }
 }
 @media screen and (min-width: 992px){
-    .fila-item{
+    .fila-item, .trabajo-item{
         flex: 1 0 16.666667%;
     }
+    h1{
+    font-family: var(--tipo-titular);
+    font-size: 6.5vw;
+}
+.h2{
+    font-family: var(--tipo-titular);
+    font-size: 5vw;
+}
+.h3{
+        font-size: 1.9vw;
+}
+p{
+    font-size: 1.6vw;
+}
 }
