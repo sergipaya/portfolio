@@ -105,7 +105,7 @@ function renderGrids() {
                 if (element.classList.contains('inicio')) {
                     appendMediaLinks('.inicio .text-section');
                     appendMediaLinks('.footer .logo-small');
-                    appendPicture();
+                    /* appendPicture(); */
                     appendEmail();
                 };
                 if (element.classList.contains('less-items') && i == 0) {
@@ -113,17 +113,18 @@ function renderGrids() {
                 };
                 if (!element.classList.contains('header') && !element.classList.contains('rrss')) {
                     createResponsiveGrid(element);
-                }
+                };
             };
         } else {
             if (element.classList.contains('inicio')) {
                 appendMediaLinks('.inicio .text-section');
                 appendMediaLinks('.footer .logo-small');
-                appendPicture();
+                /* appendPicture(); */
                 appendEmail();
             };
         };
     });
+    showPictureRow(screenWidth);
     footerLogoRef(screenWidth);
 };
 
@@ -269,6 +270,15 @@ function appendPicture() {
     pictureElement.alt = 'Sergi Payà';
     pictureElement.classList.add('foto');
     parentElement.appendChild(pictureElement);
+};
+
+function showPictureRow(screenWidth) {
+    const rowElement = document.querySelector('.picture');
+    if (screenWidth >= 767) {
+        rowElement.classList.add('hidden');
+    } else {
+        rowElement.classList.remove('hidden')
+    };
 };
 
 function appendEmail() {
