@@ -218,7 +218,7 @@ header .menu-dropdown{
 }
 
 .inicio{
-    min-height: 90vh;
+    min-height: 110vh;
     position: relative;
 }
 .inicio .text-section {
@@ -317,7 +317,7 @@ header .menu-dropdown{
 .about{
 }
 .about-content {
-    min-height: 90vh;
+    min-height: 110vh;
 }
 .about-content .text-section {
     width: 90%;
@@ -363,7 +363,7 @@ header .menu-dropdown{
 }
 @media screen and (min-width: 420px){
     .inicio, .about-content{
-        min-height: 81vh;
+        min-height: 106vh;
     }
 }
 @media screen and (min-width: 576px){
