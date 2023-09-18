@@ -13,30 +13,50 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="fila header less-items">
-            <div class="fila-item"></div>
-            <div class="fila-item first-item titulo header-item">
-                <p><a href="#inicio" title="Sergi Payá" class="a">SERGI PAY&Agrave;</a>
-                </p>
+        <div class="circulos">
+            <svg class="circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M64.5,-40C73.2,-22.3,62.5,3.8,48.5,19.1C34.6,34.3,17.3,38.7,-2.6,40.1C-22.4,41.6,-44.8,40.2,-51.8,29C-58.8,17.9,-50.3,-3.1,-39,-22.3C-27.8,-41.5,-13.9,-58.9,7,-63C27.9,-67,55.9,-57.7,64.5,-40Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <header>
+            <div class="header fila less-items">
+                <div class="fila-item"></div>
+                <div class="fila-item first-item titulo header-item">
+                    <a href="#inicio" class="a" title="logo" target="blank" rel="noopener noreferrer">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="fila-item header-item fila-nav">
+                    <nav class="nav">
+                        <ul class="ul" id="nav-list">
+                            <li class="li"><a href="#inicio" title="Inicio">Inicio</a></li>
+                            <li class="li"><a href="#trabajos" title="Trabajos">Trabajos</a></li>
+                            <li class="li"><a href="#about" title="About">About</a></li>
+                        </ul>
+                        <div class="menu" id="menu-button">
+                            <div class="menu-line"></div>
+                            <div class="menu-line"></div>
+                            <div class="menu-line"></div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="fila-item"></div>
             </div>
-            <div class="fila-item header-item">
-                <nav class="nav">
-                    <ul class="ul">
-                        <li class="li"><a href="#inicio" title="Inicio">INICIO</a></li>
-                        <li class="li"><a href="#trabajos" title="Trabajos">TRABAJOS</a></li>
-                        <li class="li"><a href="#about" title="About">ABOUT</a></li>
-                    </ul>
-                </nav>
+            <div class="menu-dropdown">
+                <ul class="ul">
+                    <li class="li"><a href="#inicio" title="Inicio">Inicio</a></li>
+                    <li class="li"><a href="#trabajos" title="Trabajos">Trabajos</a></li>
+                    <li class="li"><a href="#about" title="About">About</a></li>
+                </ul>
             </div>
-            <div class="fila-item"></div>
         </header>
         <main>
-            <section class="inicio fila" id="inicio">
+            <section class="inicio fila less-items" id="inicio">
                 <div class="fila-item"></div>
                 <div class="fila-item first-item">
                         <div class="text-section">
                             <h1 class="h1">SERGI PAY&Agrave;</h1>
-                            <h2 class="h2">FULLSTACK DEVELOPER</h2>
+                            <h2 class="h2">Fullstack Developer</h2>
                         </div>
                 </div>
                 <div class="fila-item"></div>
@@ -63,44 +83,34 @@
                 </div>
                 <div class="fila-item"></div>
             </section>
-            <section class="fila">
+            <section class="fila about-content less-items">
                 <div class="fila-item"></div>
                 <div class="fila-item first-item">
                     <div class="titulo">
                         <div class="text-section">
-                            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odio corrupti accusamus, aperiam numquam nemo?</p>
+                            <p class="p">Soy un programador web con una sed insaciable de conocimiento. Tengo una base sólida como Técnico Superior en Desarrollo de Aplicaciones Web formado en el centro de Formaci&oacute;n Profesional <a href="https://portal.edu.gva.es/cipfpbatoi/" target="_blank" rel="noopener noreferrer">CIPFP Batoi</a>, he perfeccionado mis habilidades en diversas tecnologí&iacute;as.
+                                Mi viaje en el mundo del desarrollo web me ha llevado a explorar HTML, CSS, JavaScript, Vue, PHP y Laravel. Me siento c&oacute;modo trabajando con sistemas de gesti&oacute;n de bases de datos y domino herramientas como Git y GitHub para una colaboraci&oacute;n efectiva en equipo.
+                                Lo que me diferencia es mi pasi&oacute;n por aprender y mi capacidad para trabajar codo a codo con otros profesionales. Siempre estoy buscando oportunidades para expandir mi conjunto de habilidades y sumergirme en las &uacute;ltimas tecnolog&iacute;as. Mi misi&oacute;n es crear experiencias web excepcionales y funcionales, y estoy emocionado de formar parte de proyectos desafiantes y en constante evoluci&oacute;n.</p>
                         </div>
                     </div>
                 </div>
                 <div class="fila-item"></div>
             </section>
-            <section class="fila about">
+        </main>
+        <footer">
+            <div class="fila footer less-items">
                 <div class="fila-item"></div>
-                <div class="fila-item first-item">
-                    <ul class="rrss">
-                        <li class="li">
-                            <a href="#" class="a" title="LinkedIn" target="blank" rel="noopener noreferrer">
-                                <img src="images/linkedin.png" alt="LinkedIn">
-                            </a>
-                        </li>
-                        <li class="li">
-                            <a href="#" class="a" title="GitHub" target="blank" rel="noopener noreferrer">
-                                <img src="images/github.png" alt="GitHub">
-                            </a>
-                        </li>
-                    </ul>
+                <div class="fila-item first-item titulo footer-item">
+                    <div class="logo-small">
+                        <img class="img" alt="logo">
+                    </div>
+                    <div class="small">
+                        <small>Sergi Pay&agrave; 2023</small>
+                    </div>
                 </div>
                 <div class="fila-item"></div>
-            </section>
-        </main>
-        <footer class="fila footer">
-            <div class="fila-item"></div>
-            <div class="fila-item first-item titulo footer-item">
-                <span>Texto del pie de pagina</span>
             </div>
-            <div class="fila-item"></div>
         </footer>
         <script src="scripts/main.js"></script>
     </body>
-    <script src="scripts/main.js"></script>
 </html>
