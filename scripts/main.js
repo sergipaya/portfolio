@@ -3,35 +3,29 @@
 window.addEventListener('load', (event) => {
     let works = [
         {
-            title: 'Trabajo1',
-            img: 'images/test.jpg',
-            github: '#',
-            page: '#'
+            title: 'Web de noticias',
+            img: 'images/preview_pagina_noticias.PNG',
+            github: 'https://github.com/sergipaya/pagina_noticias',
+            page: 'https://github.com/sergipaya/pagina_noticias'
         },
         {
-            title: 'Trabajo2',
-            img: 'images/test2.jpg',
-            github: '#',
-            page: '#'
+            title: 'Reservas restaurante',
+            img: 'images/preview_restaurante_assaig.PNG',
+            github: 'https://github.com/sergipaya/restaurante_assaig',
+            page: 'https://github.com/sergipaya/restaurante_assaig'
         },
         {
-            title: 'Trabajo3',
-            img: 'images/test.jpg',
-            github: '#',
-            page: '#'
+            title: 'Gimnasio virtual',
+            img: 'images/preview_crosstube.PNG',
+            github: 'https://github.com/sergipaya/crosstube',
+            page: 'https://github.com/sergipaya/crosstube'
         },
         {
-            title: 'Trabajo4',
-            img: 'images/test.jpg',
-            github: '#',
-            page: '#'
+            title: 'Juego Plataformas',
+            img: 'images/preview_juego_plataformas.png',
+            github: 'https://github.com/sergipaya/juego_plataformas',
+            page: 'https://github.com/sergipaya/juego_plataformas'
         },
-        {
-            title: 'Trabajo5',
-            img: 'images/test2.jpg',
-            github: '#',
-            page: '#'
-        }
     ];
 
     renderGrids();
