@@ -212,8 +212,8 @@ header .menu-dropdown{
     min-height: 6em;
 }
 
-.inicio .first-item{
-    min-height: 80vh;
+.inicio {
+    height: 600px;
     position: relative;
 }
 .text-section {
@@ -289,7 +289,6 @@ header .menu-dropdown{
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 35vh;
 }
 .trabajo-item .card .card-image a {
     position: relative;
@@ -322,7 +321,7 @@ header .menu-dropdown{
 .about{
 }
 .about-content {
-    min-height: 45vh;
+    height: 700px;
 }
 .about-content .text-section {
     width: 90%;
@@ -350,7 +349,7 @@ header .menu-dropdown{
     display: none;
 }
 .footer {
-    min-height: 40vh;
+    height: 300px;
 }
 .footer-item{
     border-top: 1px solid var(--gris-f);
@@ -363,7 +362,7 @@ header .menu-dropdown{
     padding-left: 1em;
 }
 .footer .logo-small img {
-    max-height: 50px;
+    height: 50px;
 }
 .footer small {
     color: var(--gris-f);
@@ -379,6 +378,9 @@ header .menu-dropdown{
     h2 {
         font-size: 2.5em;
     }
+    .about-content {
+        height: 600px;
+    }
 }
 @media screen and (min-width: 576px){
     .fila-item, .trabajo-item{
@@ -391,15 +393,22 @@ header .menu-dropdown{
     .about-content img {
         width: 52%;
     }
-    .inicio .first-item,
-    .about-content .first-item {
+    .about-content {
+        height: 400px;
+    }
+    .about-content .first-item,
+    .trabajos .first-item {
         position: unset;
     }
-    .inicio, .about-content {
+    .about-content, .trabajos {
         position: relative;
     }
-    .about-content .text-section {
+    .about-content .text-section,
+    .trabajos .text-section {
         position:absolute;
+    }
+    .card .card-image {
+        height: 300px;
     }
 }
 @media screen and (min-width: 768px){
@@ -409,9 +418,6 @@ header .menu-dropdown{
     .circulo1{
         top: -50%;
         left: -30%;
-    }
-    .about-content {
-        min-height: 55vh;
     }
     .about-content .text-section {
         width: 60%;
@@ -471,8 +477,5 @@ header .menu-dropdown{
     .circulo1{
         top: -50%;
         left: -15%;
-    }
-    .inicio .first-item {
-        min-height: 90vh;
     }
 }
