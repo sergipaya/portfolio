@@ -374,11 +374,17 @@ function renderWork(work, workSection) {
 
     const githubLink = document.createElement('a');
     githubLink.href = work.github;
+    githubLink.target = '_blank';
+    githubLink.rel = 'noopener noreferrer';
+    githubLink.title = work.title + ' GitHub';
     githubLink.classList.add('github');
     githubLink.textContent = 'GitHub';
 
     const gitPagesLink = document.createElement('a');
     gitPagesLink.href = work.page;
+    gitPagesLink.target = '_blank';
+    gitPagesLink.rel = 'noopener noreferrer';
+    gitPagesLink.title = work.title + ' Site';
     gitPagesLink.classList.add('git-pages');
     gitPagesLink.textContent = 'Ver';
 
